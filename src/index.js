@@ -1,13 +1,12 @@
 import React from "react";
+// import ReactDOM from "react-dom";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
 import { Provider } from "react-redux";
 import rootReducer from "./store/reducers";
 import { legacy_createStore as createStore } from "redux";
-
-import reportWebVitals from "./reportWebVitals";
-
+//import reportWebVitals from "./reportWebVitals";
 let store = createStore(rootReducer);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -19,4 +18,11 @@ root.render(
   </React.StrictMode>
 );
 
-reportWebVitals();
+// ReactDOM.render(
+//   <Provider store={store}>
+//     <App />
+//   </Provider>,
+//   document.getElementById("root")
+// );
+
+//reportWebVitals();
